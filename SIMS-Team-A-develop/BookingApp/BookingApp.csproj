@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.5.0" />
+    <PackageReference Include="FontAwesome.Sharp" Version="6.3.0" />
+    <PackageReference Include="FontAwesome.WPF" Version="4.7.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Application\UseCases\Guest2\" />
+    <Folder Include="Application\UseCases\Guide\" />
+    <Folder Include="Domain\Models\Guest2\" />
+    <Folder Include="Domain\Models\Guide\" />
+    <Folder Include="Domain\RepositoryInterfaces\Guest2\" />
+    <Folder Include="Domain\RepositoryInterfaces\Guide\" />
+    <Folder Include="Domain\RepositoryInterfaces\Owner\" />
+    <Folder Include="Repository\Guest2\" />
+    <Folder Include="Repository\Guide\" />
+    <Folder Include="WPF\ViewModels\Guest2\" />
+    <Folder Include="WPF\ViewModels\Guide\" />
+    <Folder Include="WPF\ViewModels\Owner\" />
+    <Folder Include="WPF\Views\Guest2\" />
+    <Folder Include="WPF\Views\Guide\" />
+    <Folder Include="WPF\Views\Owner\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="WPF\Views\Guest1\FreeDatesWin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WPF\Views\Guest1\MainBookingWin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WPF\Views\Guest1\MainWinPages\AccommodationsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WPF\Views\Guest1\MainWinPages\ReservationsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WPF\Views\Guest1\ReservationWin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="WPF\Views\Guest1\FreeDatesWin.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WPF\Views\Guest1\MainBookingWin.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WPF\Views\Guest1\MainWinPages\AccommodationsPage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WPF\Views\Guest1\MainWinPages\ReservationsPage.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WPF\Views\Guest1\ReservationWin.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>

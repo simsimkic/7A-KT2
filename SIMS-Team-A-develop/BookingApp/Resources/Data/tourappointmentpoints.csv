@@ -1,0 +1,11 @@
+1|start|6|1|True|Start
+2|mid|6|2|False|Mid
+3|mid|6|3|False|Mid
+4|mid|6|4|False|Mid
+5|mid|6|5|False|Mid
+6|end|6|6|False|End
+7|Center of Belgrade|1|1|True|Start
+8|Museum of Nikola Tesla|1|2|False|Mid
+9|St.Sava Temple|1|3|True|Mid
+10|Republic Square|1|4|True|Mid
+11|Center of Belgrade|1|5|True|End
